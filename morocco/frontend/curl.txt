@@ -1,0 +1,53 @@
+== Info:   Trying ::1...
+== Info: Connected to localhost (::1) port 3000 (#0)
+=> Send header, 94 bytes (0x5e)
+0000: 47 45 54 20 2f 61 70 69 2f 73 70 6f 74 2f 66 69 GET /api/spot/fi
+0010: 6e 64 41 6c 6c 20 48 54 54 50 2f 31 2e 31 0d 0a ndAll HTTP/1.1..
+0020: 48 6f 73 74 3a 20 6c 6f 63 61 6c 68 6f 73 74 3a Host: localhost:
+0030: 33 30 30 30 0d 0a 55 73 65 72 2d 41 67 65 6e 74 3000..User-Agent
+0040: 3a 20 63 75 72 6c 2f 37 2e 34 33 2e 30 0d 0a 41 : curl/7.43.0..A
+0050: 63 63 65 70 74 3a 20 2a 2f 2a 0d 0a 0d 0a       ccept: */*....
+<= Recv header, 24 bytes (0x18)
+0000: 48 54 54 50 2f 31 2e 31 20 34 30 34 20 4e 6f 74 HTTP/1.1 404 Not
+0010: 20 46 6f 75 6e 64 0d 0a                          Found..
+<= Recv header, 35 bytes (0x23)
+0000: 78 2d 70 6f 77 65 72 65 64 2d 62 79 3a 20 53 61 x-powered-by: Sa
+0010: 69 6c 73 20 3c 73 61 69 6c 73 6a 73 2e 6f 72 67 ils <sailsjs.org
+0020: 3e 0d 0a                                        >..
+<= Recv header, 31 bytes (0x1f)
+0000: 61 63 63 65 73 73 2d 63 6f 6e 74 72 6f 6c 2d 61 access-control-a
+0010: 6c 6c 6f 77 2d 6f 72 69 67 69 6e 3a 20 0d 0a    llow-origin: ..
+<= Recv header, 36 bytes (0x24)
+0000: 61 63 63 65 73 73 2d 63 6f 6e 74 72 6f 6c 2d 61 access-control-a
+0010: 6c 6c 6f 77 2d 63 72 65 64 65 6e 74 69 61 6c 73 llow-credentials
+0020: 3a 20 0d 0a                                     : ..
+<= Recv header, 32 bytes (0x20)
+0000: 61 63 63 65 73 73 2d 63 6f 6e 74 72 6f 6c 2d 61 access-control-a
+0010: 6c 6c 6f 77 2d 6d 65 74 68 6f 64 73 3a 20 0d 0a llow-methods: ..
+<= Recv header, 32 bytes (0x20)
+0000: 61 63 63 65 73 73 2d 63 6f 6e 74 72 6f 6c 2d 61 access-control-a
+0010: 6c 6c 6f 77 2d 68 65 61 64 65 72 73 3a 20 0d 0a llow-headers: ..
+<= Recv header, 122 bytes (0x7a)
+0000: 73 65 74 2d 63 6f 6f 6b 69 65 3a 20 73 61 69 6c set-cookie: sail
+0010: 73 2e 73 69 64 3d 73 25 33 41 79 49 57 53 48 73 s.sid=s%3AyIWSHs
+0020: 65 44 72 43 6b 39 4a 30 79 69 5a 6e 31 54 2d 6c eDrCk9J0yiZn1T-l
+0030: 77 46 4c 50 2d 66 30 6e 51 5f 2e 46 48 74 4a 32 wFLP-f0nQ_.FHtJ2
+0040: 70 38 54 71 59 48 47 48 38 67 6d 77 45 72 69 71 p8TqYHGH8gmwEriq
+0050: 7a 32 50 4b 31 54 48 38 31 57 4e 4b 72 33 53 79 z2PK1TH81WNKr3Sy
+0060: 4a 56 69 77 45 6f 3b 20 50 61 74 68 3d 2f 3b 20 JViwEo; Path=/; 
+0070: 48 74 74 70 4f 6e 6c 79 0d 0a                   HttpOnly..
+<= Recv header, 37 bytes (0x25)
+0000: 64 61 74 65 3a 20 57 65 64 2c 20 32 36 20 41 75 date: Wed, 26 Au
+0010: 67 20 32 30 31 35 20 32 31 3a 33 32 3a 30 37 20 g 2015 21:32:07 
+0020: 47 4d 54 0d 0a                                  GMT..
+<= Recv header, 19 bytes (0x13)
+0000: 63 6f 6e 6e 65 63 74 69 6f 6e 3a 20 63 6c 6f 73 connection: clos
+0010: 65 0d 0a                                        e..
+<= Recv header, 28 bytes (0x1c)
+0000: 74 72 61 6e 73 66 65 72 2d 65 6e 63 6f 64 69 6e transfer-encodin
+0010: 67 3a 20 63 68 75 6e 6b 65 64 0d 0a             g: chunked..
+<= Recv header, 2 bytes (0x2)
+0000: 0d 0a                                           ..
+<= Recv data, 5 bytes (0x5)
+0000: 30 0d 0a 0d 0a                                  0....
+== Info: Closing connection 0

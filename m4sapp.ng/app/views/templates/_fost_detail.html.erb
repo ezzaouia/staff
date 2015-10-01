@@ -1,0 +1,56 @@
+
+<h1>{{fost.name}}</h1>
+
+{{upvotes.count}} : <span ng-click="like()">Like</span>
+{{downvotes.count}} :<span ng-click="dislike()"> Dislike</span>
+
+<p>{{fost.description}}</p>
+
+
+<hr>
+<div class="actions">
+  <a ng-href="/" class="btn btn-default">Back</a>
+  <a ui-sref="edit_fost({fost_id: fost.id})" class="btn btn-default" ng-disabled=''>Edit</a>
+  <a ng-href="" ng-click="removeFost(fost)" class="btn btn-default" ng-disabled=''>Delete</a>
+</div>
+
+<hr>
+<h2>Comments</h2>
+
+
+<blockquote ng-repeat="review in reviews">
+	<b>Stars: {{review.stars}}</b>
+	{{review.body}}
+	<cite>by: {{review.author}}</cite>
+</blockquote>
+
+<blockquote ng-show="signedIn()">
+	<form role="form" novalidate name="reviewForm">
+	  <div class="form-group" ng-class="{'has-error': !reviewForm.review_stars.$valid}">
+	    <label for="review_stars"><%=  :stars %></label>
+	    <select name="review_stars" ng-model="review.stars" class="form-control" required >
+	    	<option value="1">1 star</option>
+				<option value="2">2 stars</option>
+				<option value="3">3 stars</option>
+				<option value="4">4 stars</option>
+				<option value="5">5 stars</option>
+			</select>
+	  </div>
+	  <div class="form-group" ng-class="{'has-error': !reviewForm.review_body.$valid}">
+	    <label for="review_body"><%=  :dody %></label>
+	    <input type="text" name="review_body" ng-model="review.body" class="form-control" required />
+	  </div>
+	  <div class="form-group" ng-class="{'has-error': !reviewForm.review_author.$valid}">
+	    <label for="review_author"><%=  :author %></label>
+	    <input type="text" name="review_author" ng-model="review.author" class="form-control" required/>
+	  </div>	
+	  <div class="actions">
+	    <div class="pull-letf">
+	      <button class="btn btn-primary" ng-click="submitReview()" ng-disabled="!reviewForm.$valid">
+	      	Save
+	      </button>
+	    </div>
+	  </div>
+	</form>
+</blockquote>
+

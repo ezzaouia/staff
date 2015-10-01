@@ -1,0 +1,11 @@
+div.container
+  div(ng-include="'app/components/navbar/navbar.html'")
+  h1 Groups
+
+  ul(ng-repeat="group in groups")
+    li {{ group.id }} {{ group.name }}
+
+  form(class="form-horizontal" role="form" ng-submit="submitGroup()")
+    input(type='text' ng-model='group.name' id='name' placeholder='Name gose here')
+    input(type="submit" class="btn btn-primary" value="Save")
+  {{group.name}}

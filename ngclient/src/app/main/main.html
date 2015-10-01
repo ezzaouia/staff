@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1>Lorem ipsum!</h1>
+    <p class="lead">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+    <p>
+      <a class="btn btn-lg btn-success" href="#/login">
+        <i class="ion-log-in"></i>
+        Log in
+      </a>
+      <a class="btn btn-lg btn-primary" href="#/signup">
+        <i class="ion-person-add"></i> 
+        Create account
+      </a>
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in awesomeThings | orderBy:'rank'">
+      <div class="thumbnail">
+        <img class="pull-right" ng-src="assets/images/{{awesomeThing.logo}}" alt="{{awesomeThing.title}}">
+        <div class="caption">
+          <h3>{{awesomeThing.title}}</h3>
+          <p>{{awesomeThing.description}}</p>
+          <p><a ng-href="{{awesomeThing.url}}">{{awesomeThing.url}}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="footer">
+    <p>With ♥ from <a href="https://twitter.com/MDR">@MDR</a></p>
+  </div>
+
+</div>
